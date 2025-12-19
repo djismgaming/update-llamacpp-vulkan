@@ -34,11 +34,12 @@ This repository contains a PowerShell script (`update-llamacpp-vulkan.ps1`) that
 
 3. The script will:
 
-   1. Create the directory `C:\Users\<User>\apps\llamacpp-vulkan` (or clean it if it already exists).
-   2. Download the latest `bin-win-vulkan-x64.zip`.
-   4. Extract the contents into the directory.
-   5. Append the directory to the user’s `PATH` if it isn’t already present.
-   6. Verify the installation by executing `llama-server.exe --version`.
+   1. Creates the base directory `C:\Users\<username>\apps\` if it doesn't exist
+   2. Creates or cleans the subdirectory `C:\Users\<username>\apps\llamacpp-vulkan\`
+   3. Downloads the latest `bin-win-vulkan-x64.zip` from GitHub
+   4. Extracts the contents to the llamacpp-vulkan folder
+   5. Adds this folder to the user's PATH
+   6. Verifies installation by running `llama-server.exe --version`
 
 4. After the script completes, you can launch `llama-server.exe` from any terminal without providing a full path.
 

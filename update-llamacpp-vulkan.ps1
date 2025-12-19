@@ -2,6 +2,8 @@
 #     Llama.cpp Vulkan    #
 ###########################
 
+Write-Host "🚀  Updating Llama.cpp compiled for the Vulkan backend" -ForegroundColor Cyan
+
 # Define repo and asset pattern
 $Owner = "ggml-org"
 $Repo = "llama.cpp"
@@ -73,3 +75,5 @@ Remove-Item $ZipFile -Force
 # Verify installation (assuming the binary is named 'llama-server.exe')
 Write-Host "Verifying installation..."
 & "$HOME\apps\llamacpp-vulkan\llama-server.exe" --version
+
+Write-Host "✔️  Updating Llama.cpp compiled for the Vulkan backend complete" -ForegroundColor Cyan
