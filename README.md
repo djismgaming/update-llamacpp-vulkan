@@ -1,4 +1,4 @@
-# Llama.cpp Vulkan
+# update-llamacpp-vulkan
 
 This repository contains a PowerShell script (`update-llamacpp-vulkan.ps1`) that automates downloading and installing the latest Windows Vulkan‑enabled binaries of **llama.cpp** from GitHub.
 
@@ -45,15 +45,6 @@ This repository contains a PowerShell script (`update-llamacpp-vulkan.ps1`) that
 
 > **Tip**  
 > If you open a new PowerShell window after running the script, the updated `PATH` will be available immediately.
-
-## Usage
-
-```powershell
-# Example: Run the server with a local GGML model
-llama-server.exe --model "C:\models\ggml-model.bin" --prompt "Hello, world!"
-```
-
-Replace `--model` with the path to any supported GGML model.
 
 ## Contributing
 
